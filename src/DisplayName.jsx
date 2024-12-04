@@ -18,13 +18,13 @@ function DisplayName() {
 
 return (
   
-    <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} >
-    <label>
-      First Name:<input type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
+    <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} onSubmit={handleSubmit}>
+    <labelgi>
+      First Name:<input type="text" defaultValue={""} value={name} onChange={(e) => setName(e.target.value)} />
     </label>
 
     <label>
-      Last Name:<input type="text" placeholder="Enter your last name" value={lastName}  onChange={(e)=>setLastName(e.target.value)} />
+      Last Name:<input type="text" defaultValue={""} value={lastName}  onChange={(e)=>setLastName(e.target.value)} />
     </label>
 
     <button type="submit" style={{ width: "100px" }} onClick={handleSubmit}>Submit</button>
