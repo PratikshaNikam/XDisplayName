@@ -18,8 +18,9 @@ function DisplayName() {
 
 return (
   
-    <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} onSubmit={handleSubmit}>
-    <labelgi>
+  <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} >
+    <h1>Full Name Display</h1>
+    <label>
       First Name:<input type="text" defaultValue={""} value={name} onChange={(e) => setName(e.target.value)} />
     </label>
 
