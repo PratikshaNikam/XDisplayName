@@ -10,7 +10,11 @@ function DisplayName() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    !name || !lastName ? alert("Please enter your name and last name") : setShowName(true);
+    if (!name && !lastName) return alert("Please enter your name and last name");
+    else if (!name) return alert("Please enter your name");
+    else if (!lastName) return alert("Please enter your last name");
+    else setShowName(true);
+    
     
     
   }
