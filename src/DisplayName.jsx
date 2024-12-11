@@ -11,7 +11,9 @@ function DisplayName() {
     const reg=/^([^0-9$%]*)$/;
     if (reg.test(e.target.value)) {
       setName(e.target.value);
-    }
+   }
+   
+
    
   };
 
@@ -37,7 +39,7 @@ return (
     </label>
 
     <label>
-      Last Name:<input type="text" defaultValue={""} value={lastName}  onChange={(e)=>handleChange(e)} />
+      Last Name:<input type="text" defaultValue={""} value={lastName}  onChange={(e)=>setLastName(e.target.value)} />
     </label>
 
     <button type="submit" style={{ width: "100px" }} onClick={handleSubmit}>Submit</button>
