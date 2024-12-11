@@ -48,7 +48,8 @@ function DisplayName() {
     
   
       </form>
-      {showName ? <h1>{name} {lastName}</h1> : null}
+     
+      {showName ? <p>Full Name: {name} {lastName}</p> : null}
       
       </>
 
