@@ -30,8 +30,9 @@ function DisplayName() {
   }
 
 
-return (
+  return (
   
+  <>
   <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} onSubmit={handleSubmit}>
     <h1>Full Name Display</h1>
     <label>
@@ -44,9 +45,15 @@ return (
 
     <button type="submit" style={{ width: "100px" }} onClick={handleSubmit}>Submit</button>
     
-    {showName ? <p>Full Name: {name} {lastName}</p> : null}
+    
   
-    </form>
+      </form>
+      {showName ? <h1>{name} {lastName}</h1> : null}
+      
+      </>
+
+  
+  
     
     
   );
